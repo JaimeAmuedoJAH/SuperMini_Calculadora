@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/miniCalculadora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/str_num1"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nmbNumero1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="true"
+            android:ems="10"
+            android:hint="Introduce un número"
+            android:inputType="numberSigned"
+            android:padding="8dp"
+            android:textAlignment="textEnd"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Número 2:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nmbNumero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="true"
+            android:ems="10"
+            android:hint="Introduce un número"
+            android:inputType="numberSigned"
+            android:padding="8dp"
+            android:textAlignment="textEnd" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/resultado"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:width="10dp"
+            android:height="50dp"
+            android:backgroundTint="@color/FondoBtnOperaciones"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="+" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnMenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:width="10dp"
+            android:height="50dp"
+            android:backgroundTint="@color/FondoBtnOperaciones"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="-" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnMultiplicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:width="10dp"
+            android:height="50dp"
+            android:backgroundTint="@color/FondoBtnOperaciones"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="x" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:width="10dp"
+            android:height="50dp"
+            android:backgroundTint="@color/FondoBtnOperaciones"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="/" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/fondoBorrar"
+        android:fontFamily="serif"
+        android:hapticFeedbackEnabled="false"
+        android:text="Borrar"
+        android:textSize="20sp"
+        app:cornerRadius="0dp" />
+
+</LinearLayout>
